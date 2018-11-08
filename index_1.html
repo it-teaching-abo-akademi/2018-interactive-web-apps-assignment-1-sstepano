@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Title</title>
+<script>
+  function allowDrop(ev) {
+    ev.preventDefault();  // enable elements to be dropped in other elements
+  }
+  function  drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  function drop(ev) {
+    ev.preventDefault();  //  prevent the browser to open the data as link on drop
+    var data = ev.dataTransfer.getData("text");  // get the dragged data
+    ev.target.appendChild(document.getElementById(data));  // append the dragged element into the drop element
+  }
+</script>
+</head>
+<body>
+    <div id="div0">
+	    <div id="div1"><p id="p1">Text A</p></div>
+      <div id="div2"><p id="p2">Text B</p></div>
+      <div id="div3"><p id="p3">Text C</p></div>
+      <div id="div4">
+        <img id="img2" src="20mpix_sunset.jpg" alt="Sunset">
+      </div>
+      <div id="div5">
+        <img id="img3" src="20mpix_car.jpg" alt="Car" draggable="true" ondragstart="drag(event)">
+      </div>
+      <div id="div6"><p i="p6">Text D</p></div>
+      <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	    <div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+</body>
+</html>
