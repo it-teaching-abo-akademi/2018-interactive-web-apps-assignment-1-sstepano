@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .main {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+        .aside {
+            float: left;
+            padding: 15px;
+            width: 100%;
+            height: 100%;
+        }
+        .menu {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+        @media only screen and (min-width: 768px) {
+            .aside {width: 20%;}
+            .main {width: 80%;}
+        }
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+        .aside ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 15px;
+            border: 2px solid black;
+            font-size: 14px;
+        }
+        .aside li a{
+            display: block;
+            padding: 8px;
+            margin-bottom: 7px;
+            color: black;
+            text-decoration: none;
+        }
+        .aside li a:hover {
+            color: lightgray;
+        }
+        .aside1 a {
+            color: black;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            float: right;
+        }
+
+        .menu li a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover {
+            color: lightgray;
+        }
+        .aside1 {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#view">View</a></li>
+        <li><a href="#edit">Edit</a></li>
+        <li><a href="#file">File</a></li>
+    </ul>
+</div>
+
+<div class="row">
+
+    <div class="aside">
+        <ul>
+            <li><a href="#item1">Item 1</a></li>
+            <li><a href="#item2">Item 2</a></li>
+            <li><a href="#item3">Item 3</a></li>
+            <li><a href="#item4">Item 4</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <p>In his view on history, Ames was both presentist and relativist; during a public lecture given at Muhlenberg College in 1909 he characterized the daily customs and behavior of early American settlers as "barbarous" compared to contemporary standards, and credited the growth of democracy with the development of more liberal social norms.[15][28] At the same time, however, he cautioned about passing moral judgments on leaders of the past based on modern expectations.[28] As an instructor of history, Ames was described by contemporary historian Wayne Journell as "unabashedly" supportive of its use to invigorate support for the government's policies during World War I, quoting him that "it is the duty of the teacher of history and civics to seize the wonderful opportunity afforded by the war to aid in promoting an intelligent and patriotic public opinion in support of the government in these critical times".[29] Musser offered contradictory recollections of Ames' academic approach, describing him as having a completely objective and impartial view towards both history and current affairs and viewing with skepticism the idea that concerns such as politics or national interest should influence his teaching or research.</p>
+        <img src="20mpix_sunset.jpg" width="460" height="345">
+        <p>At the turn of the 20th century, the American Historical Association (AHA) undertook a nationwide effort to examine repositories of manuscripts and archival documents, and make specific recommendations for their future preservation.[18] The initiative was partly influenced by Ames' advocacy of German historical methodology, learned during his year in Europe, which placed special emphasis on primary documentary sources.[18] At the behest of the AHA, Ames spent several weeks in Harrisburg, in 1899, examining Pennsylvania's state records, which were poorly organized and largely scattered across various state offices.[18] He co-authored, with historian Lewis Slifer Shimmel, a report on their status and, in 1900, filed a separate report on the state of the Philadelphia municipal archives.[18] Their report concluded that over the years Pennsylvania's public records had been partially plundered by government officials with some state documents known to be held by libraries in New York and Boston, and others probably once bearing the original signature of William Penn had since had their signature lines cut out, perhaps for souvenir keeping.[18] Ames continued his attempts to inventory Pennsylvania public records in tandem with his teaching duties at the University of Pennsylvania, although his efforts were hampered by the tradition that all state government offices closed promptly at 3 o'clock in the afternoon.</p>
+        <p>Ames continued his advocacy of archival preservation as a member of the AHA's Public Archives Commission, serving as its chair from 1903 to 1913, and continuing as a member for many years thereafter.[42] By 1904, the commission had secured the services of historians in 32 states to study the status of public records and in 1907 Ames authored a detailed status report regarding archival preservation legislation throughout the United States, which would later be credited as the first report of its kind.[42] Two years later, in 1909, Ames organized the first national conference of American government archivists.</p>
+     </div>
+
+</div>
+</body>
+</html>
