@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+/* For mobile phones: */
+img {
+    /* scales with the viewport */
+    width: 100%;
+    height: auto;
+    padding: 10px 15%; /* left and right paddings are relative 15% */
+}
+.menu {
+    /* first row */
+    float: left; /* floating to the left */
+    padding: 0 15px;
+    width: 100%; /* one column */
+}
+.aside {
+    /* second row */
+    float: left;
+    padding: 0 15px;
+    width: 100%; /* one column */
+}
+.main {
+    /* third row */
+    float: left;
+    padding: 0 15px;
+    width: 100%; /* one column */
+    font-size: 12px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.aside ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid black;
+    font-size: 14px;
+}
+.aside li {
+    display: block;
+    padding: 8px;
+    margin-bottom: 7px;
+    color: black;
+    text-decoration: none;
+}
+.aside li:hover {
+    /* mouse over a list item */
+    color: lightgray;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.menu li {
+    float: right; /* a menu list item floating to the right */
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+.menu li:hover {
+    color: lightgray;
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .main {font-size: 13px;}
+}
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+    .menu {padding: 15px;} /* first row */
+    .menu ul {font-size: 14px;}
+    .aside {
+        /* second row first column */
+        width: 20%;
+        padding: 15px;
+    }
+    .aside ul {font-size: 14px;}
+    .main {
+        /* second row second column */
+        width: 80%;
+        padding: 15px;
+        font-size: 14px;
+    }
+    img {height: 345px;} /* only width scales with the viewport */
+}
