@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* includes padding and border in element total width and height */
 }
 /* For mobile phones: */
 img {
@@ -84,5 +84,5 @@ html {
         padding: 15px;
         font-size: 14px;
     }
-    img {height: 345px;} /* only width scales with the viewport */
+    img {height: 345px;} /* scales only width with the viewport */
 }
